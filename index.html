@@ -3,30 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weiterleitung zu Snake</title>
+    <title>Meine Website</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
         button {
-            background-color: #4CAF50; /* Grüne Farbe */
+            background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            margin-top: 20px;
         }
 
         button:hover {
-            background-color: #45a049; /* Dunkleres Grün beim Hover */
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Spiel starten</h1>
-    <p>Klicke auf den Button, um das Spiel Snake zu starten!</p>
-    <button onclick="window.location.href='https://fapsetv.github.io/snake';">
-        Zu Snake
-    </button>
+    <header>
+        <h1>Willkommen auf meiner Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Startseite</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <main>
+        <h2>Hier findest du spannende Inhalte!</h2>
+        <p>Dies ist ein Beispieltext für die Hauptinhalte der Website. Du kannst diesen Text anpassen, um deine eigenen Informationen darzustellen.</p>
+        <button onclick="window.location.href='https://fapsetv.github.io/snake';">
+            Starte Snake
+        </button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meine Website. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
+
 
